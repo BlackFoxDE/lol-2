@@ -21,7 +21,7 @@ var count = 0;
 while (true) {
 	try {
 		//var msg = execSync("curl http://whatthecommit.com/index.txt -s").toString();
-		fs.writeFileSync("random.txt", random(5000));
+		fs.writeFileSync("random.txt", random(50));
 
 		//msg = msg.replace(/"/g, "");
 
@@ -33,7 +33,7 @@ while (true) {
 
 		console.log("NEW COMMIT! " + count);
 
-		if(count % 500 == 0) {
+		if(count % 1000 == 0) {
 			console.log("Pushing now!");
 			execSync("git push");
 		}
