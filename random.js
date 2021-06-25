@@ -33,7 +33,7 @@ while (true) {
 
 		if(count % 500 == 0) {
 			console.log("Pushing now!");
-			execSync("cat .cred | git push");
+			execSync("git push");
 		}
 
 		count++;
