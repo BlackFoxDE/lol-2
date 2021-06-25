@@ -9,5 +9,6 @@ WORKDIR /src
 
 RUN git config --global user.email "you@example.com"
 RUN git config --global user.name "BlackFoxDE"
+RUN git config --global credential.helper store
 
 ENTRYPOINT [ "node", "." ]
